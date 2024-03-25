@@ -1,0 +1,116 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA_Compatible" content="IE-edge">
+    <title>Products</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/script.js' %}" defer></script>
+</head>
+<body>
+<header  class="myheader">
+    <li class="button-menu">Menu
+        <ul class="submenu">
+            <li><a href="{% url 'newarrivals' %}">New arrivals✦</a></li>
+            <li><a href="{% url 'women' %}">Women✦</a></li>
+            <li><a href="{% url 'men' %}">Men✦</a></li> 
+            <li><a href="{% url 'collections' %}">Collections✦</a></li>
+        </ul>
+    </li>   
+        <div class="menu-header-menu"></div>
+            <ul> 
+                <li><a id="home" href="{% url 'index' %}" class="button-start">Home</a></li>
+                <li><a href="{% url 'shoppingbag' %}" class="button-start">Shopping Bag</a></li>
+                <li><a href="{% url 'products' %}">Products</a></li>
+                <li><a href="{% url 'register' %}">Register</a></li>
+                <li><a href="{% url 'contacts' %}">Contacts</a></li>
+            </ul>
+</header>
+<div class="ribbon"><img src="{% static 'img/ribbon.png' %}"></div>
+<div class="hero-content">    
+    <h1>Client Support<br>&FAQS</h1>
+    <hr>
+    <div class="hero-content__p" id="qua">Here is a list of the most frequently asked questions.</div>
+</div> 
+
+
+<div class="questions">
+<details>
+    <summary> HOW DO I MAKE A PURCHASE? ✦</summary>
+    <p> ✦Shopping the Vivienne Westwood online boutique is easy: if you know what you are looking for,
+        use the specific category links, such as 'shoes', 'accessories' shop by ‘trends’ section on the site,
+        or through our 'icons'. Once you have found an item, select your size, and colour and use the 'add to bag'
+        button underneath. Review the items in your shopping bag by selecting the 'shopping bag' link on the page.
+        From the shopping bag you can directly edit product details (colour, sizes, and quantities), remove them in
+        case you’ve changed your mind or add products to your wish list. Click on 'checkout' to complete your order.</p>
+</details>
+<details>
+    <summary> HOW TO PAY FOR AN ORDER? ✦</summary>
+    <p> ✦We accept Visa, MasterCard, American Express, MasterCard Debit, Switch/Maestro, Visa Delta payments and PayPal.<br>
+        ✦You can add your card info during the payment step on checkout. All payments are secure.</p>
+</details>
+<details>
+    <summary> DO I NEED AN ACCOUNT TO PLACE AN ORDER? ✦</summary>
+    <p> ✦Online orders placed using guest checkout cannot be added to registered accounts.
+        Setting up an account is not mandatory, but if you register, you will be able to enjoy the following
+        benefits through your 'My Account':<br>
+        • Track your orders and review past purchases,<br>
+        • Gain access to your ‘Wish List’,<br>
+        • Be notified when new products are available<br>
+        • Save your address and card details for faster shopping,<br>
+        • Manage your account details and newsletter subscriptions.</p>
+</details>
+<details>
+    <summary> HOW DO I MAKE A PURCHASE? ✦</summary>
+    <p> ✦Vivienne Westwood sizes vary from label to label; we recommend checking the 'Size Guide'
+        link which can be found on the product pages underneath the size selector. If you are still unsure
+        and would like to discuss our sizing with a member of our team, please contact our Customer Service
+        by emailing coqcore_service@viviennewestwood.com .</p>
+</details>
+<details>
+    <summary> CAN I CHANGE MY SHIPPING ADRESS AFTER THE ORDER HAS BEEN DISPATCHED? ✦</summary>
+    <p> ✦Once an online order is placed, we are unable to redirect orders to a different address for security purposes.
+        Therefore, please ensure you provide a suitable shipping address for the specified delivery times.
+        Alternatively – You can contact the carrier provider directly for further assistance should you be unavailable
+        to receive your delivery as scheduled.</p>
+</details>
+</div>
+
+<hr>
+<div class="hero-content__p" id="qua">Still Have Any Questions?</div>
+<div class="showmore-container">
+    <a id="contactus" href="{% url 'contacts' %}" class="showmore">Contact Us</a>
+</div>
+<hr>
+<footer>
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h3>About Us</h3>
+            <p>Buy Less, Choose Well, Make It Last</p>
+            <p>Materials, Activism, Emissions, Supply & Heritage</p>
+            <p>Modern Slavery Statement</p>
+            <div class="contact">
+                <span><i class="fas fa-phone"></i> +(996)557-300-790</span>
+                <span><i class="fas fa-envelope"></i> rasyanara208@gmail.com</span>
+            </div>
+        </div>
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="{% url 'products' %}">Products✦</a></li>
+                <li><a href="{% url 'contacts' %}">Contacts✦</a></li>
+                <li><a href="{% url 'register' %}">Register✦</a></li>
+                <li><a href="{% url 'support' %}">Support✦</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 CoqCore. All rights reserved.
+    </div>
+</footer>
+
+</body>
+</html>

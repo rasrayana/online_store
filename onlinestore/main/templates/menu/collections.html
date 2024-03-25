@@ -1,0 +1,106 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA_Compatible" content="IE-edge">
+    <meta name="viewpoint" content="width=device=width, initial-scale=1.0">
+    <title>Collections</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/script.js' %}" defer></script>
+</head>
+<body>
+<header  class="myheader">
+    <li class="button-menu">Menu
+        <ul class="submenu">
+            <li><a href="{% url 'index' %}">Home✦</a></li>
+            <li><a href="{% url 'newarrivals' %}">New arrivals✦</a></li>
+            <li><a href="{% url 'men' %}">Men✦</a></li> 
+            <li><a href="{% url 'women' %}">Women✦</a></li>
+        </ul>
+    </li>
+        <div class="menu-header-menu"></div>
+            <ul>
+            </li>   
+            <li><a href="{% url 'shoppingbag' %}" class="button-start">Shopping Bag</a></li>
+            <li><a href="{% url 'products' %}">Products</a></li>
+            <li><a href="{% url 'contacts' %}">Contacts</a></li>
+            <li><a href="{% url 'register' %}">Register</a></li>
+            <li><a href="{% url 'support' %}">Support</a></li>
+        </ul>
+    </div>
+    </header> 
+    <div class="menu-content">    
+        <h1>✦Latest✦<br>Collections</h1> 
+        <div class="menu-content__p">Where Style Meets Sophistication - Embrace Elegance with Our Exclusive Collections</div>
+    </div>
+    <hr>
+    <div class="collectionname">Autumn 2023 "Cat Walk"</div>
+    <div class="scroll-container">
+        <div class="images-container">
+            <img src="{% static 'img/image1.jpg' %}" alt="Image 1">
+            <img src="{% static 'img/image2.jpg' %}" alt="Image 2">
+            <img src="{% static 'img/image3.jpg' %}" alt="Image 3">
+            <img src="{% static 'img/image4.jpg' %}" alt="Image 4">
+            <img src="{% static 'img/image5.jpg' %}" alt="Image 5">
+            <img src="{% static 'img/image6.jpg' %}" alt="Image 6">
+            <img src="{% static 'img/image7.jpg' %}" alt="Image 7">
+        </div>
+    </div>
+    <hr>
+
+    <div class="collectionname">Winter-Spring 2023 "Andreas Kronthaler"</div>
+    <div class="scroll-container">
+        <div class="images-container">
+            <img src="{% static 'img/image8.jpg' %}" alt="Image 8">
+            <img src="{% static 'img/image9.jpg' %}" alt="Image 9">
+            <img src="{% static 'img/image10.jpg' %}" alt="Image 10">
+            <img src="{% static 'img/image11.jpg' %}" alt="Image 11">
+            <img src="{% static 'img/image12.jpg' %}" alt="Image 12">
+            <img src="{% static 'img/image13.jpg' %}" alt="Image 13">
+            <img src="{% static 'img/image14.jpg' %}" alt="Image 14">
+            <img src="{% static 'img/image15.jpg' %}" alt="Image 15">
+            <img src="{% static 'img/image16.jpg' %}" alt="Image 16">
+        </div>
+    </div>
+    <hr>
+<div style="height: 300vh;"></div>
+    <hr>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>Buy Less, Choose Well, Make It Last</p>
+                <p>Materials, Activism, Emissions, Supply & Heritage</p>
+                <p>Modern Slavery Statement</p>
+                <div class="contact">
+                    <span><i class="fas fa-phone"></i> +(996)557-300-790</span>
+                    <span><i class="fas fa-envelope"></i> rasyanara208@gmail.com</span>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="{% url 'products' %}">Products✦</a></li>
+                    <li><a href="{% url 'contacts' %}">Contacts✦</a></li>
+                    <li><a href="{% url 'register' %}">Register✦</a></li>
+                    <li><a href="{% url 'support' %}">Support✦</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-form">
+                <h3>Contact Us</h3>
+                <form action="#" method="post">
+                    <input type="email" name="email" class="text-input contact-input" placeholder="Your email address">
+                    <textarea rows="4" name="message" class="text-input contact-input" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn-big contact-btn">
+                        <i class="fas fa-envelope"></i>
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 CoqCore. All rights reserved.
+        </div>
+    </footer>
+</body>

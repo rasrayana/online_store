@@ -1,0 +1,83 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA_Compatible" content="IE-edge">
+    <title>Contacts</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/script.js' %}" defer></script>
+</head>
+<body>
+<header  class="myheader">
+    <li class="button-menu">Menu
+        <ul class="submenu">
+            <li><a href="{% url 'newarrivals' %}">New arrivals✦</a></li>
+            <li><a href="{% url 'women' %}">Women✦</a></li>
+            <li><a href="{% url 'men' %}">Men✦</a></li> 
+            <li><a href="{% url 'collections' %}">Collections✦</a></li>
+        </ul>
+    </li>   
+        <div class="menu-header-menu"></div>
+    <ul> 
+        <li><a id="home" href="{% url 'index' %}" class="button-start">Home</a></li>
+        <li><a href="{% url 'shoppingbag' %}" class="button-start">Shopping Bag</a></li>
+        <li><a href="{% url 'products' %}">Products</a></li>
+        <li><a href="{% url 'register' %}">Register</a></li>
+        <li><a href="{% url 'support' %}">Support</a></li>
+    </ul>
+</header> 
+<div class="contacts-content__p">Customer service is available on +(996)557-300-790,<br>
+    via email coqcure_servise.@gmail.com<br> or you can send us a message using the form:
+
+</div>
+<div class="contacts">
+    <h3>Contact Us</h3>
+    <form action="#" method="post">
+        <input type="text" class="contact-input" placeholder="Your Name" value="" 
+        maxlength="50" required="" minlength="2" autocomplete="given-name"><br>
+
+        <input type="email" name="email" class="contact-input" placeholder="Your email address" required=""><br>
+        <textarea rows="4" name="message" class="contact-input" placeholder="Your message" required=""></textarea><br>
+        <div class="shend-contact-container"></div>
+            <button type="submit" class="send-contact">
+                Send    
+            </button>
+        </div>
+    </form>
+</div>
+
+
+
+<hr>
+<footer>
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h3>About Us</h3>
+            <p>Buy Less, Choose Well, Make It Last</p>
+            <p>Materials, Activism, Emissions, Supply & Heritage</p>
+            <p>Modern Slavery Statement</p>
+            <div class="contact">
+                <span><i class="fas fa-phone"></i> +(996)557-300-790</span>
+                <span><i class="fas fa-envelope"></i> rasyanara208@gmail.com</span>
+            </div>
+        </div>
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="{% url 'products' %}">Products✦</a></li>
+                <li><a href="{% url 'contacts' %}">Contacts✦</a></li>
+                <li><a href="{% url 'register' %}">Register✦</a></li>
+                <li><a href="{% url 'support' %}">Support✦</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 CoqCore. All rights reserved.
+    </div>
+</footer>
+
+</body>
+</html>

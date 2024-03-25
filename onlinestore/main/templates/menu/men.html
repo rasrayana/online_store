@@ -1,0 +1,100 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA_Compatible" content="IE-edge">
+    <meta name="viewpoint" content="width=device=width, initial-scale=1.0">
+    <title>Men</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/script.js' %}" defer></script>
+</head>
+<body>
+<header  class="myheader">
+    <li class="button-menu">Menu
+        <ul class="submenu">
+            <li><a href="{% url 'index' %}">Home✦</a></li>
+            <li><a href="{% url 'newarrivals' %}">New arrivals✦</a></li>
+            <li><a href="{% url 'women' %}">Women✦</a></li> 
+            <li><a href="{% url 'collections' %}">Collections✦</a></li>
+        </ul>
+    </li>
+        <div class="menu-header-menu"></div>
+            <ul>
+                <li><a href="{% url 'shoppingbag' %}" class="button-start">Shopping Bag</a></li>
+                <li><a href="{% url 'products' %}">Products</a></li>
+                <li><a href="{% url 'contacts' %}">Contacts</a></li>
+                <li><a href="{% url 'register' %}">Register</a></li>
+                <li><a href="{% url 'support' %}">Support</a></li>
+            </ul>
+        </div>
+
+</header> 
+    <img class="decoration" src="{% static 'img/men.jpg' %}" width="100%" height="100%">
+    <div class="menu-content">    
+        <h1>✦Men's✦<br>Clothing</h1> 
+        <div class="menu-content__p">Explore our selection of clothings for men.<br> Inspired by the eclectic lifestyle of nomads, 
+            styles borrow from antique wardrobes, faded tapestries and old Hollywood.<br> Styles include our asymmetric hems, 
+            frill collars, slash and ribbed detailing, among others.</div>
+    </div>
+    <hr>
+<div class="product-container">
+    {% for product in products %}
+    <div class="product-card">
+        <img src="{{ product.image.url }}" alt="{{ product.title }}">
+        <h2>{{ product.title }}</h2>
+        <p>{{ product.type }}</p>
+        <span class="price">{{ product.price }}</span>
+        {% if user.is_authenticated %}
+        <a href="{% url 'shoppingbag' %}" class="add-to-cart">✦</a>
+        {% else %}
+        <a href="{% url 'register' %}" ></a>
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>
+<div class="showmore-container">
+    <button class="showmore">Show More</button>
+</div>
+
+
+<div style="height: 20vh;"></div>
+<hr>
+<footer>
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h3>About Us</h3>
+            <p>Buy Less, Choose Well, Make It Last</p>
+            <p>Materials, Activism, Emissions, Supply & Heritage</p>
+            <p>Modern Slavery Statement</p>
+            <div class="contact">
+                <span><i class="fas fa-phone"></i> +(996)557-300-790</span>
+                <span><i class="fas fa-envelope"></i> rasyanara208@gmail.com</span>
+            </div>
+        </div>
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="{% url 'products' %}">Products✦</a></li>
+                <li><a href="{% url 'contacts' %}">Contacts✦</a></li>
+                <li><a href="{% url 'register' %}">Register✦</a></li>
+                <li><a href="{% url 'support' %}">Support✦</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact-form">
+            <h3>Contact Us</h3>
+            <form action="#" method="post">
+                <input type="email" name="email" class="text-input contact-input" placeholder="Your email address">
+                <textarea rows="4" name="message" class="text-input contact-input" placeholder="Your message"></textarea>
+                <button type="submit" class="btn btn-big contact-btn">
+                    <i class="fas fa-envelope"></i>
+                    Send
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 CoqCore. All rights reserved.
+    </div>
+</footer>
+</body>

@@ -1,0 +1,213 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA_Compatible" content="IE-edge">
+    <title>CoqCore</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/script.js' %}" defer></script>
+</head>
+<body>
+<header class="myheader">
+    <div class="button-menu">Menu
+        <ul class="submenu">
+            <li><a href="{% url 'newarrivals' %}">New arrivals✦</a></li>
+            <li><a href="{% url 'women' %}">Women✦</a></li>
+            <li><a href="{% url 'men' %}">Men✦</a></li> 
+            <li><a href="{% url 'collections' %}">Collections✦</a></li>
+        </ul>
+    </div>
+    <ul>                  
+        <li><a href="{% url 'shoppingbag' %}" class="button-start">Shopping Bag</a></li>
+        <li><a href="{% url 'products' %}">Products</a></li>
+        <li><a href="{% url 'contacts' %}">Contacts</a></li>
+        <li><a href="{% url 'register' %}">Register</a></li>
+        <li><a href="{% url 'support' %}">Support</a></li>
+    </ul>
+</header>
+    
+    <div class="ribbon"><img src="{% static 'img/ribbon.png' %}"></div>
+    <div class="hero-content">    
+        <h1>Coquette Charm<br>Boutique <span>Rayana R.</span></h1> 
+        <div class="hero-content__p">Where Style Meets Sophistication - Embrace Elegance with Our Exclusive Collections</div>
+    </div>
+    <hr>
+    <div id="vivienne"><img src="{% static 'img/vivienne.jpg' %}"></div>
+    <div class="b-scrolling_content">
+        <div class="b-scrolling_content-text" id="scrollingText" style="font-size: 40px;">
+            Culture lives through controversy.<span class="m-small" style="font-size: 24px;"> 
+                - Vivienne Westwood </span>
+        </div>
+    </div>
+<hr>
+<div class="product-container">
+    <div class="product-card">
+        <img src="{% static 'img/women1.jpg' %}" alt="WP1">
+        <h2>Worth More Jacket</h2>
+        <span class="price">$170.00</span>
+        <button class="add-to-cart">✦</button>
+    </div>
+    <div class="product-card">
+        <img src="{% static 'img/newarrivals2.jpg' %}" alt="WP1">
+        <h2>Worth More Jacket</h2>
+        <span class="price">$900.00</span>
+        <button class="add-to-cart">✦</button>
+    </div>
+    <div class="product-card">
+        <img src="{% static 'img/men3.jpg' %}" alt="WP1">
+        <h2>Worth More Jacket</h2>
+        <span class="price">$800.00</span>
+        <button class="add-to-cart">✦</button>
+    </div>
+    <div class="product-card">
+        <img src="{% static 'img/women4.jpg' %}" alt="WP1">
+        <h2>Worth More Jacket</h2>
+        <span class="price">$610.00</span>
+        <button class="add-to-cart">✦</button>
+    </div>
+    <div class="product-card">
+        <img src="{% static 'img/newarrivals5.jpg' %}" alt="WP1">
+        <h2>Worth More Jacket</h2>
+        <span class="price">$980.00</span>
+        <button class="add-to-cart">✦</button>
+    </div>
+    <div class="product-card">
+        <img src="{% static 'img/men6.jpg' %}" alt="WP1">
+        <h2>Worth More Jacket</h2>
+        <span class="price">$460.00</span>
+        <button class="add-to-cart">✦</button>
+    </div>
+    <div class="product-card">
+        <img src="{% static 'img/women7.jpg' %}" alt="WP1">
+        <h2>Worth More Jacket</h2>
+        <span class="price">$300.00</span>
+        <button class="add-to-cart">✦</button>
+    </div>
+    <div class="product-card">
+        <img src="{% static 'img/newarrivals8.jpg' %}" alt="WP1">
+        <h2>Worth More Jacket</h2>
+        <span class="price">$870.00</span>
+        <button class="add-to-cart">✦</button>
+    </div>
+    <div class="product-card">
+        <img src="{% static 'img/men9.jpg' %}" alt="WP1">
+        <h2>Worth More Jacket</h2>
+        <span class="price">$670.00</span>
+        <button class="add-to-cart">✦</button>
+    </div>
+    <div class="product-card">
+        <img src="{% static 'img/women10.jpg' %}" alt="WP1">
+        <h2>Worth More Jacket</h2>
+        <span class="price">$340.00</span>
+        <button class="add-to-cart">✦</button>
+    </div>
+    <div class="product-card">
+        <img src="{% static 'img/newarrivals11.jpg' %}" alt="WP1">
+        <h2>Worth More Jacket</h2>
+        <span class="price">$980.00</span>
+        <button class="add-to-cart">✦</button>
+    </div>
+    <div class="product-card">
+        <img src="{% static 'img/men12.jpg' %}" alt="WP1">
+        <h2>Worth More Jacket</h2>
+        <span class="price">$660.00</span>
+        <button class="add-to-cart">✦</button>
+    </div>
+    <div class="product-card">
+        <img src="{% static 'img/women13.jpg' %}" alt="WP1">
+        <h2>Worth More Jacket</h2>
+        <span class="price">$500.00</span>
+        <button class="add-to-cart">✦</button>
+    </div>
+    <div class="product-card">
+        <img src="{% static 'img/newarrivals14.jpg' %}" alt="WP1">
+        <h2>Worth More Jacket</h2>
+        <span class="price">$240.00</span>
+        <button class="add-to-cart">✦</button>
+    </div>
+    <div class="product-card">
+        <img src="{% static 'img/men15.jpg' %}" alt="WP1">
+        <h2>Worth More Jacket</h2>
+        <span class="price">$780.00</span>
+        <button class="add-to-cart">✦</button>
+    </div>
+    <div class="product-card">
+        <img src="{% static 'img/women16.jpg' %}" alt="WP1">
+        <h2>Worth More Jacket</h2>
+        <span class="price">$570.00</span>
+        <button class="add-to-cart">✦</button>
+    </div>
+</div>
+<div class="showmore-container">
+    <button class="showmore">Show More</button>
+</div>
+<div class="nom2">
+    <img src="{% static 'img/nom2.png' %}" width="200px" height="275px" alt="Image">
+</div>
+<hr>
+
+<div class="collectionname">Explore Our Collections</div>
+<div class="add-container">
+    <a href="{% url 'women' %}"class="add-link">
+        <img src="{% static 'img/womenadd.jpg' %}" alt="Image 1">
+        <span class="add-text">Women's Collection</span>
+    </a>
+    <a href="{% url 'men' %}" class="add-link">
+        <img src="{% static 'img/menadd.jpg' %}" alt="Image 2">
+        <span class="add-text">Men's Collection</span>
+    </a>
+    <a href="{% url 'newarrivals' %}" class="add-link">
+        <img src="{% static 'img/newarrivalsadd.jpg' %}" alt="Image 3">
+        <span class="add-text">New Arrivals</span>
+    </a>
+    <a href="{% url 'collections' %}" class="add-link">
+        <img src="{% static 'img/collectionsadd.jpg' %}" alt="Image 4">
+        <span class="add-text">All Collections</span>
+    </a>
+</div>
+
+
+
+<hr>
+<footer>
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h3>About Us</h3>
+            <p>Buy Less, Choose Well, Make It Last</p>
+            <p>Materials, Activism, Emissions, Supply & Heritage</p>
+            <p>Modern Slavery Statement</p>
+            <div class="contact">
+                <span><i class="fas fa-phone"></i> +(996)557-300-790</span>
+                <span><i class="fas fa-envelope"></i> rasyanara208@gmail.com</span>
+            </div>
+        </div>
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="{% url 'products' %}">Products✦</a></li>
+                <li><a href="{% url 'contacts' %}">Contacts✦</a></li>
+                <li><a href="{% url 'register' %}">Register✦</a></li>
+                <li><a href="{% url 'support' %}">Support✦</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact-form">
+            <h3>Contact Us</h3>
+            <form action="#" method="post">
+                <input type="email" name="email" class="text-input contact-input" placeholder="Your email address">
+                <textarea rows="4" name="message" class="text-input contact-input" placeholder="Your message"></textarea>
+                <button type="submit" class="btn btn-big contact-btn">
+                    <i class="fas fa-envelope"></i>
+                    Send
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 CoqCore. All rights reserved.
+    </div>
+</footer>
+
+</body>
+</html>
