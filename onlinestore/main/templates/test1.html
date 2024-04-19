@@ -1,0 +1,33 @@
+{%load static%}
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA_Compatible" content="IE-edge">
+    <title>Test</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/script.js' %}" defer></script>
+ </head>
+ <body>
+    <header class="myheader">
+        <div class="button-menu">Menu
+            <ul class="submenu">
+                <li><a href="{% url 'newarrivals' %}">New arrivals✦</a></li>
+                <li><a href="{% url 'women' %}">Women✦</a></li>
+                <li><a href="{% url 'men' %}">Men✦</a></li> 
+                <li><a href="{% url 'collections' %}">Collections✦</a></li>
+            </ul>
+        </div>
+        <ul>                  
+            <li><a href="{% url 'shoppingbag' %}" class="button-start">Shopping Bag</a></li>
+            <li><a href="{% url 'products' %}">Products</a></li>
+            <li><a href="{% url 'contacts' %}">Contacts</a></li>
+            <li><a href="{% url 'register' %}">Register</a></li>
+            <li><a href="{% url 'support' %}">Support</a></li>
+            <li><a href="{% url 'test1' %}">test</a></li>
+        </ul>
+    </header>
+    
+ </body>
+ </html>

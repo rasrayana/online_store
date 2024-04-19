@@ -16,4 +16,5 @@ urlpatterns = [
     path('women/', views.women, name='women'),
     path('collections/', views.collections, name='collections'),
     path('myadmin/', admin.site.urls), 
+    path('test1/', views.test1, name='test1'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -30,6 +30,9 @@ def contacts(request):
 def products(request):
     return render(request, 'products.html')
 
+def test1(request):
+    return render(request, 'test1.html')
+
 def register(request):
     return render(request, 'register.html')
 
