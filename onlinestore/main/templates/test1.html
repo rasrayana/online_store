@@ -28,6 +28,65 @@
             <li><a href="{% url 'test1' %}">Test</a></li>
         </ul>
     </header>
+
+    <div class="collectionname" id="exploreourproducts">✦Explore Our Products✦</div>
+    <div class="add-container">
+        <a href="{% url 'women' %}"class="add-link">
+            <img src="{% static 'img/womenadd.jpg' %}" alt="Image 1">
+            <span class="add-text">Women's Collection</span>
+        </a>
+        <a href="{% url 'men' %}" class="add-link">
+            <img src="{% static 'img/menadd.jpg' %}" alt="Image 2">
+            <span class="add-text">Men's Collection</span>
+        </a>
+        <a href="{% url 'newarrivals' %}" class="add-link">
+            <img src="{% static 'img/newarrivalsadd.jpg' %}" alt="Image 3">
+            <span class="add-text">New Arrivals</span>
+        </a>
+        <a href="{% url 'collections' %}" class="add-link">
+            <img src="{% static 'img/collectionsadd.jpg' %}" alt="Image 4">
+            <span class="add-text">All Collections</span>
+        </a>
+    </div>
+    <hr>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>Buy Less, Choose Well, Make It Last</p>
+                <p>Materials, Activism, Emissions, Supply & Heritage</p>
+                <p>Modern Slavery Statement</p>
+                <div class="contact">
+                    <span><i class="fas fa-phone"></i> +(996)557-300-790</span>
+                    <span><i class="fas fa-envelope"></i> rasyanara208@gmail.com</span>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="{% url 'products' %}">Products✦</a></li>
+                    <li><a href="{% url 'contacts' %}">Contacts✦</a></li>
+                    <li><a href="{% url 'register' %}">Register✦</a></li>
+                    <li><a href="{% url 'support' %}">Support✦</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-form">
+                <h3>Contact Us</h3>
+                <form action="#" method="post">
+                    <input type="email" name="email" class="text-input contact-input" placeholder="Your email address">
+                    <textarea rows="4" name="message" class="text-input contact-input" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn-big contact-btn">
+                        <i class="fas fa-envelope"></i>
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 CoqCore. All rights reserved.
+        </div>
+    </footer>
     
  </body>
  </html>
